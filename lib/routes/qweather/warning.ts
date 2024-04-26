@@ -47,11 +47,18 @@ async function handler(ctx) {
         ctx.req.param('location') + '_now',
         async () => {
             const response = await got(requestUrl);
-            return response.data;
+            if (response.data.warning && response.data.warning.length > 0) {
+                return response.data;
+            } else {
+                throw new Error('No new warning data');
+            }
         },
         CACHE_CONTENT_EXPIRE,
         false
-    );
+    ).catch((err) => {
+        console.log(err);
+        return cache.get(ctx.req.param('location') + '_now');
+    });
 
     const data = responseData.warning;
 
