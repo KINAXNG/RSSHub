@@ -1,7 +1,7 @@
 import { Route } from '@/types';
 import { getCurrentPath } from '@/utils/helpers';
 const __dirname = getCurrentPath(import.meta.url);
-const CACHE_CONTENT_EXPIRE = 60 * 60 * 24 * 30; // 30 days
+
 import cache from '@/utils/cache';
 import got from '@/utils/got';
 import { art } from '@/utils/render';
@@ -53,7 +53,7 @@ async function handler(ctx) {
                 throw new Error('No new warning data');
             }
         },
-        CACHE_CONTENT_EXPIRE,
+        3600,
         false
     ).catch((err) => {
         console.log(err);
