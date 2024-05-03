@@ -1019,6 +1019,14 @@
     "_name": "AP News",
     ".": [
       {
+        "title": "RSS",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:rss"
+        ],
+        "target": "/apnews/rss/:rss"
+      },
+      {
         "title": "Topics",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
@@ -6494,6 +6502,19 @@
       }
     ]
   },
+  "gq.com": {
+    "_name": "GQ",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/gq/news"
+      }
+    ]
+  },
   "greasyfork.org": {
     "_name": "Greasy Fork",
     ".": [
@@ -9984,6 +10005,19 @@
           "/"
         ],
         "target": "/newsmarket/:category?"
+      }
+    ]
+  },
+  "newyorker.com": {
+    "_name": "New Yorker",
+    ".": [
+      {
+        "title": "The New Yorker",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/feed/:category/:subCategory"
+        ],
+        "target": "/newyorker/:category/:subCategory?"
       }
     ]
   },
@@ -14652,6 +14686,43 @@
           "/topic/:topic"
         ],
         "target": "/thehindu/topic/:topic"
+      }
+    ]
+  },
+  "theinitium.com": {
+    "_name": "端传媒",
+    ".": [
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/author/:type"
+        ],
+        "target": "/theinitium/author/:type"
+      },
+      {
+        "title": "专题・栏目",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/channel/:type"
+        ],
+        "target": "/theinitium/channel/:type"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/author/:type"
+        ],
+        "target": "/theinitium/author/:type"
+      },
+      {
+        "title": "话题・标签",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/tags/:type"
+        ],
+        "target": "/theinitium/tags/:type"
       }
     ]
   },
