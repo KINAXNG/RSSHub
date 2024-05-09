@@ -9,6 +9,7 @@ import * as path from 'node:path';
 import { parseDate } from '@/utils/parse-date';
 import { config } from '@/config';
 const rootUrl = 'https://devapi.qweather.com/v7/warning/now?';
+
 export const route: Route = {
     path: '/warning/:location',
     categories: ['forecast'],
