@@ -1480,15 +1480,187 @@
   },
   "423down": {
     "routes": {
-      "/:category/:type?": {
-        "path": "/:category/:type?",
-        "name": "Unknown",
-        "maintainers": [],
+      "/:category{.+}?": {
+        "path": "/:category{.+}?",
+        "name": "423Down",
+        "url": "423down.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/423down",
+        "parameters": {
+          "category": "分类，默认为首页，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [Android - 423Down](https://www.423down.com/apk)，网址为 `https://www.423down.com/apk`。截取 `https://www.423down.com/` 到末尾的部分 `apk` 作为参数填入，此时路由为 [`/423down/apk`](https://rsshub.app/423down/apk)。\n  :::\n\n  #### [安卓软件](https://www.423down.com/apk)\n\n  | [安卓软件](https://www.423down.com/apk) |\n  | --------------------------------------- |\n  | [apk](https://rsshub.app/423down/apk)   |\n  \n  #### 电脑软件\n  \n  | [原创软件](https://www.423down.com/zd423) | [媒体播放](https://www.423down.com/multimedia)      | [网页浏览](https://www.423down.com/browser)   | [图形图像](https://www.423down.com/image) | [聊天软件](https://www.423down.com/im) |\n  | ----------------------------------------- | --------------------------------------------------- | --------------------------------------------- | ----------------------------------------- | -------------------------------------- |\n  | [zd423](https://rsshub.app/423down/zd423) | [multimedia](https://rsshub.app/423down/multimedia) | [browser](https://rsshub.app/423down/browser) | [image](https://rsshub.app/423down/image) | [im](https://rsshub.app/423down/im)    |\n  \n  | [办公软件](https://www.423down.com/work) | [上传下载](https://www.423down.com/down) | [实用软件](https://www.423down.com/softtool)    | [系统辅助](https://www.423down.com/systemsoft)      | [系统必备](https://www.423down.com/systemplus)      |\n  | ---------------------------------------- | ---------------------------------------- | ----------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |\n  | [work](https://rsshub.app/423down/work)  | [down](https://rsshub.app/423down/down)  | [softtool](https://rsshub.app/423down/softtool) | [systemsoft](https://rsshub.app/423down/systemsoft) | [systemplus](https://rsshub.app/423down/systemplus) |\n  \n  | [安全软件](https://www.423down.com/security)    | [补丁相关](https://www.423down.com/patch) | [硬件相关](https://www.423down.com/hardware)    |\n  | ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------- |\n  | [security](https://rsshub.app/423down/security) | [patch](https://rsshub.app/423down/patch) | [hardware](https://rsshub.app/423down/hardware) |\n  \n  #### 操作系统\n  \n  | [Windows 11](https://www.423down.com/win11) | [Windows 10](https://www.423down.com/win10) | [Windows 7](https://www.423down.com/win7) | [Windows XP](https://www.423down.com/win7/winxp)    | [WinPE](https://www.423down.com/pe-system)        |\n  | ------------------------------------------- | ------------------------------------------- | ----------------------------------------- | --------------------------------------------------- | ------------------------------------------------- |\n  | [win11](https://rsshub.app/423down/win11)   | [win10](https://rsshub.app/423down/win10)   | [win7](https://rsshub.app/423down/win7)   | [win7/winxp](https://rsshub.app/423down/win7/winxp) | [pe-system](https://rsshub.app/423down/pe-system) |\n  ",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "423down.com/:category",
+              "423down.com"
+            ]
+          },
+          {
+            "title": "首页",
+            "source": [
+              "www.423down.com"
+            ],
+            "target": "/"
+          },
+          {
+            "title": "安卓软件",
+            "source": [
+              "www.423down.com/apk"
+            ],
+            "target": "/apk"
+          },
+          {
+            "title": "电脑软件 - 原创软件",
+            "source": [
+              "www.423down.com/zd423"
+            ],
+            "target": "/zd423"
+          },
+          {
+            "title": "电脑软件 - 媒体播放",
+            "source": [
+              "www.423down.com/multimedia"
+            ],
+            "target": "/multimedia"
+          },
+          {
+            "title": "电脑软件 - 网页浏览",
+            "source": [
+              "www.423down.com/browser"
+            ],
+            "target": "/browser"
+          },
+          {
+            "title": "电脑软件 - 图形图像",
+            "source": [
+              "www.423down.com/image"
+            ],
+            "target": "/image"
+          },
+          {
+            "title": "电脑软件 - 聊天软件",
+            "source": [
+              "www.423down.com/im"
+            ],
+            "target": "/im"
+          },
+          {
+            "title": "电脑软件 - 办公软件",
+            "source": [
+              "www.423down.com/work"
+            ],
+            "target": "/work"
+          },
+          {
+            "title": "电脑软件 - 上传下载",
+            "source": [
+              "www.423down.com/down"
+            ],
+            "target": "/down"
+          },
+          {
+            "title": "电脑软件 - 实用软件",
+            "source": [
+              "www.423down.com/softtool"
+            ],
+            "target": "/softtool"
+          },
+          {
+            "title": "电脑软件 - 系统辅助",
+            "source": [
+              "www.423down.com/systemsoft"
+            ],
+            "target": "/systemsoft"
+          },
+          {
+            "title": "电脑软件 - 系统必备",
+            "source": [
+              "www.423down.com/systemplus"
+            ],
+            "target": "/systemplus"
+          },
+          {
+            "title": "电脑软件 - 安全软件",
+            "source": [
+              "www.423down.com/security"
+            ],
+            "target": "/security"
+          },
+          {
+            "title": "电脑软件 - 补丁相关",
+            "source": [
+              "www.423down.com/patch"
+            ],
+            "target": "/patch"
+          },
+          {
+            "title": "电脑软件 - 硬件相关",
+            "source": [
+              "www.423down.com/hardware"
+            ],
+            "target": "/hardware"
+          },
+          {
+            "title": "操作系统 - Windows 11",
+            "source": [
+              "www.423down.com/win11"
+            ],
+            "target": "/win11"
+          },
+          {
+            "title": "操作系统 - Windows 10",
+            "source": [
+              "www.423down.com/win10"
+            ],
+            "target": "/win10"
+          },
+          {
+            "title": "操作系统 - Windows 7",
+            "source": [
+              "www.423down.com/win7"
+            ],
+            "target": "/win7"
+          },
+          {
+            "title": "操作系统 - Windows XP",
+            "source": [
+              "www.423down.com/win7/winxp"
+            ],
+            "target": "/win7/winxp"
+          },
+          {
+            "title": "操作系统 - WinPE",
+            "source": [
+              "www.423down.com/pe-system"
+            ],
+            "target": "/pe-system"
+          }
+        ],
         "location": "index.ts"
       }
     },
     "name": "423Down",
-    "url": "www.423down.com"
+    "url": "423down.com",
+    "categories": [
+      "program-update"
+    ],
+    "description": ""
   },
   "4gamers": {
     "routes": {
@@ -41402,6 +41574,37 @@
     "name": "南京航空航天大学",
     "url": "aao.nuaa.edu.cn"
   },
+  "nudt": {
+    "routes": {
+      "/yjszs/:type?": {
+        "path": "/yjszs/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/nudt/yjszs/sszs",
+        "parameters": {
+          "type": "分类，见下表，默认为硕士招生"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研究生院",
+        "maintainers": [
+          "Blank0120"
+        ],
+        "url": "yjszs.nudt.edu.cn/",
+        "description": "| 通知公告 | 硕士招生 |\n  | -------- | -------- |\n  | tzgg     | sszs     |",
+        "location": "yjszs.ts"
+      }
+    },
+    "name": "中国人民解放军国防科技大学",
+    "url": "www.nudt.edu.cn"
+  },
   "nuist": {
     "routes": {
       "/bulletin/:category?": {
@@ -58146,6 +58349,36 @@
     "name": "Typora",
     "url": "typora.io"
   },
+  "typst": {
+    "routes": {
+      "/universe": {
+        "path": "/universe",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/typst/universe",
+        "radar": [
+          {
+            "source": [
+              "typst.app/universe"
+            ],
+            "target": "/universe"
+          }
+        ],
+        "name": "Universe",
+        "maintainers": [
+          "HPDell"
+        ],
+        "location": "universe.ts"
+      }
+    },
+    "name": "Typst",
+    "url": "typst.com",
+    "description": "\nCompose papers faster: Focus on your text and let Typst take care of layout and formatting.\n",
+    "zh": {
+      "name": "Typst"
+    }
+  },
   "u3c3": {
     "routes": {
       "/search/:keyword/:preview?": {
@@ -61584,6 +61817,31 @@
         "maintainers": [],
         "location": "news.ts"
       },
+      "/rsgis/:type/:sub?": {
+        "path": "/rsgis/:type/:sub?",
+        "categories": [
+          "university"
+        ],
+        "example": "/whu/rsgis/index",
+        "parameters": {
+          "type": "栏目，详见表格",
+          "sub": "子栏目。当 `type` 为 `index` 的时候不起效；当 `type` 为其他合法值时，默认为 `all` 表示所有子类，其他可选项见下表。"
+        },
+        "radar": [
+          {
+            "source": [
+              "rsgis.whu.edu.cn/index.htm"
+            ],
+            "target": "/rsgis/index"
+          }
+        ],
+        "name": "武汉大学遥感信息工程学院",
+        "maintainers": [
+          "HPDell"
+        ],
+        "description": "\n\n|  分类名  | `type` 值 |  子类名  | `sub` 值 |\n| :------: | :-------- | :------: | :------- |\n|   首页   | `index`   |          |          |\n| 学院新闻 | `xyxw`    |   全部   | `all`    |\n|          |           | 学院要闻 | `xyyw`   |\n|          |           | 合作交流 | `hzjl`   |\n|          |           | 媒体聚焦 | `mtjj`   |\n|          |           | 学工要闻 | `xgyw`   |\n| 科学研究 | `kxyj`    |   全部   | `all`    |\n|          |           | 学术报告 | `xsbg`   |\n|          |           | 学术交流 | `xsjl`   |\n|          |           | 学术成果 | `kycg`   |\n|          |           | 申报信息 | `sbxx`   |\n| 通知公告 | `tzgg`    |   全部   | `all`    |\n|          |           | 学院通知 | `xytz`   |\n|          |           | 教学动态 | `jxdt`   |\n|          |           | 学术动态 | `xsdt`   |\n|          |           | 人才引进 | `rcyj`   |\n",
+        "location": "rsgis.ts"
+      },
       "/gs/:type?": {
         "path": "/gs/:type?",
         "categories": [
@@ -63861,6 +64119,75 @@
     },
     "name": "Yahoo",
     "url": "hk.news.yahoo.com"
+  },
+  "yamibo": {
+    "routes": {
+      "/bbs/forum/:fid/:type?": {
+        "name": "BBS - 板块",
+        "categories": [
+          "bbs"
+        ],
+        "path": "/bbs/forum/:fid/:type?",
+        "example": "/yamibo/bbs/forum/5/404",
+        "parameters": {
+          "fid": "板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值",
+          "type": "板块子分类，网页中选中板块分类后URL中的typeid值"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "optional": true,
+              "name": "YAMIBO_SALT",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"
+            },
+            {
+              "optional": true,
+              "name": "YAMIBO_AUTH",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"
+            }
+          ]
+        },
+        "description": ":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::",
+        "location": "bbs/forum.ts"
+      },
+      "/bbs/thread/:tid": {
+        "name": "BBS - 讨论串",
+        "categories": [
+          "bbs"
+        ],
+        "path": "/bbs/thread/:tid",
+        "example": "/yamibo/bbs/thread/541914",
+        "parameters": {
+          "tid": "讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "optional": true,
+              "name": "YAMIBO_SALT",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"
+            },
+            {
+              "optional": true,
+              "name": "YAMIBO_AUTH",
+              "description": "百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"
+            }
+          ]
+        },
+        "description": ":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::",
+        "location": "bbs/thread.ts"
+      }
+    },
+    "name": "百合会",
+    "url": "yamibo.com"
   },
   "yande": {
     "routes": {

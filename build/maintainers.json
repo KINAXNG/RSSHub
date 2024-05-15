@@ -158,7 +158,9 @@
   "/3kns/:filters?/:order?": [
     "xzzpig"
   ],
-  "/423down/:category/:type?": [],
+  "/423down/:category{.+}?": [
+    "nczitzk"
+  ],
   "/4gamers/": [
     "TonyRL"
   ],
@@ -4121,6 +4123,9 @@
     "Seiry",
     "Xm798"
   ],
+  "/nudt/yjszs/:type?": [
+    "Blank0120"
+  ],
   "/nuist/bulletin/:category?": [
     "gylidian"
   ],
@@ -5786,6 +5791,9 @@
   "/typora/changelog": [
     "cnzgray"
   ],
+  "/typst/universe": [
+    "HPDell"
+  ],
   "/u3c3/search/:keyword/:preview?": [
     "storytellerF"
   ],
@@ -6143,6 +6151,9 @@
   ],
   "/whu/hyxt/:category{.+}?": [],
   "/whu/news/:category{.+}?": [],
+  "/whu/rsgis/:type/:sub?": [
+    "HPDell"
+  ],
   "/whu/gs/:type?": [
     "Delreyaa"
   ],
@@ -6378,6 +6389,12 @@
     "TonyRL"
   ],
   "/yahoo/news/en/:category?": [],
+  "/yamibo/bbs/forum/:fid/:type?": [
+    "KarasuShin"
+  ],
+  "/yamibo/bbs/thread/:tid": [
+    "KarasuShin"
+  ],
   "/yande/post/popular_recent/:period?": [
     "fashioncj"
   ],
